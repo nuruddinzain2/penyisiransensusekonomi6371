@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Penyisiran Sensus Ekonomi 2026 Kota Banjarmasin</title>
+<style>
+  :root{
+    --cream:#FFFBF3;
+    --ink:#1F2933;
+    --ink-soft:#5B6572;
+    --orange:#F97316;
+    --orange-dark:#DD6410;
+    --green:#0E9F6E;
+    --green-soft:#E5F8F0;
+    --card-border:#ECE6DA;
+    --card-shadow: 0 1px 2px rgba(31,41,51,0.04), 0 8px 20px rgba(31,41,51,0.05);
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  header{
+    background:#fff;
+    border-bottom:1px solid var(--card-border);
+    padding:18px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .brand-mark{
+    width:46px;
+    height:46px;
+    border-radius:12px;
+    background:linear-gradient(135deg, var(--orange), var(--orange-dark));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+  }
+  .brand-mark svg{ width:24px; height:24px; }
+  .brand-text .line1{
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:0.02em;
+    color:var(--ink);
+    line-height:1.2;
+  }
+  .brand-text .line2{
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:0.06em;
+    color:var(--orange-dark);
+    text-transform:uppercase;
+  }
+
+  main{
+    max-width:1080px;
+    margin:0 auto;
+    padding:64px 32px 96px;
+  }
+
+  .eyebrow{
+    display:flex;
+    justify-content:center;
+  }
+  .eyebrow span{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#FFF1E4;
+    color:var(--orange-dark);
+    font-size:13px;
+    font-weight:600;
+    padding:8px 18px;
+    border-radius:999px;
+  }
+
+  h1{
+    text-align:center;
+    font-size:34px;
+    line-height:1.25;
+    margin:22px auto 10px;
+    max-width:720px;
+    color:var(--ink);
+  }
+  p.lead{
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:16px;
+    margin:0 auto 56px;
+    max-width:560px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+  }
+  @media (max-width:860px){
+    .grid{ grid-template-columns:1fr; }
+    header{ padding:16px 20px; }
+    main{ padding:44px 20px 72px; }
+    h1{ font-size:27px; }
+  }
+
+  .card{
+    background:#fff;
+    border:1px solid var(--card-border);
+    border-radius:16px;
+    box-shadow:var(--card-shadow);
+    padding:28px;
+    display:flex;
+    flex-direction:column;
+    text-decoration:none;
+    color:inherit;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 4px 8px rgba(31,41,51,0.06), 0 16px 30px rgba(31,41,51,0.09);
+    border-color:#E2D9C6;
+  }
+
+  .icon{
+    width:52px;
+    height:52px;
+    border-radius:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:22px;
+  }
+  .icon svg{ width:24px; height:24px; }
+  .icon.teal{ background:#DFF6EE; }
+  .icon.amber{ background:#FFE8D2; }
+  .icon.blue{ background:#E1ECFB; }
+
+  .card h2{
+    font-size:18px;
+    margin:0 0 10px;
+    color:var(--ink);
+  }
+  .card .num{
+    color:var(--orange-dark);
+    font-weight:700;
+  }
+  .card p{
+    font-size:14.5px;
+    line-height:1.55;
+    color:var(--ink-soft);
+    margin:0 0 26px;
+    flex-grow:1;
+  }
+
+  .card .cta{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    font-size:14px;
+    font-weight:600;
+    color:var(--green);
+    border-top:1px solid var(--card-border);
+    padding-top:16px;
+    margin-top:auto;
+  }
+  .card .cta svg{
+    width:16px;
+    height:16px;
+    transition: transform .15s ease;
+  }
+  .card:hover .cta svg{ transform:translateX(3px); }
+
+  footer{
+    text-align:center;
+    padding:28px 20px 40px;
+    color:var(--ink-soft);
+    font-size:13px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 17l5-5 4 4 8-9"/>
+        <path d="M15 7h6v6"/>
+      </svg>
+    </div>
+    <div class="brand-text">
+      <div class="line1">PORTAL PENYISIRAN SE2026</div>
+      <div class="line2">Kota Banjarmasin</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="eyebrow">
+    <span>Daftar Aplikasi</span>
+  </div>
+
+  <h1>Portal Penyisiran Sensus Ekonomi 2026 Kota Banjarmasin</h1>
+  <p class="lead">Pilih aplikasi di bawah ini untuk mulai bekerja.</p>
+
+  <div class="grid">
+
+    <a class="card" href="https://script.google.com/macros/s/AKfycbzA_CmEd9ZwSEca_xkwW76bDD_LaE4vCnJgutGtJuOL7S95StrB-XR5eLeY-Fo2mgtD/exec" target="_blank" rel="noopener">
+      <div class="icon teal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0E9F6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </div>
+      <h2><span class="num">1.</span> Penyisiran Keluarga</h2>
+      <p>Aplikasi penyisiran data keluarga untuk mendukung kelengkapan pendataan Sensus Ekonomi 2026.</p>
+      <div class="cta">
+        Buka Aplikasi
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </a>
+
+    <a class="card" href="https://script.google.com/macros/s/AKfycbxrLo_inbbltPXzuU1S7tYBcmUEvE5M8VTvwYbFbplpW1dyOf9TSvtBSun0JBjyDBjP/exec" target="_blank" rel="noopener">
+      <div class="icon amber">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#DD6410" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <h2><span class="num">2.</span> Penyisiran Data Podes</h2>
+      <p>Aplikasi penyisiran data potensi desa (Podes) untuk mendukung kelengkapan pendataan Sensus Ekonomi 2026.</p>
+      <div class="cta">
+        Buka Aplikasi
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </a>
+
+    <a class="card" href="https://nuruddinzain2.github.io/pengawasan6371/" target="_blank" rel="noopener">
+      <div class="icon blue">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 11l3 3L22 4"/>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+        </svg>
+      </div>
+      <h2><span class="num">3.</span> Form Pelaporan Administrasi</h2>
+      <p>Sistem pelaporan lapangan untuk pengawasan pelaksanaan Sensus Ekonomi 2026 secara berkala.</p>
+      <div class="cta">
+        Buka Sistem Pelaporan
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  Portal Penyisiran Sensus Ekonomi 2026 &middot; Kota Banjarmasin
+</footer>
+
+</body>
+</html>
