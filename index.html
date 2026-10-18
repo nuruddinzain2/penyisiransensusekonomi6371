@@ -24,7 +24,6 @@
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-
   header{
     background:#fff;
     border-bottom:1px solid var(--card-border);
@@ -34,97 +33,35 @@
     justify-content:space-between;
     padding-top: calc(18px + env(safe-area-inset-top, 0px));
   }
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:14px;
-  }
+  .brand{ display:flex; align-items:center; gap:14px; }
   .brand-mark{
-    width:46px;
-    height:46px;
-    border-radius:12px;
+    width:46px; height:46px; border-radius:12px;
     background:linear-gradient(135deg, var(--orange), var(--orange-dark));
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
   .brand-mark svg{ width:24px; height:24px; }
-  .brand-text .line1{
-    font-size:15px;
-    font-weight:700;
-    letter-spacing:0.02em;
-    color:var(--ink);
-    line-height:1.2;
-  }
-  .brand-text .line2{
-    font-size:11.5px;
-    font-weight:600;
-    letter-spacing:0.06em;
-    color:var(--orange-dark);
-    text-transform:uppercase;
-  }
-
-  main{
-    max-width:1080px;
-    margin:0 auto;
-    padding:64px 32px 96px;
-  }
-
-  .eyebrow{
-    display:flex;
-    justify-content:center;
-  }
+  .brand-text .line1{ font-size:15px; font-weight:700; letter-spacing:0.02em; color:var(--ink); line-height:1.2; }
+  .brand-text .line2{ font-size:11.5px; font-weight:600; letter-spacing:0.06em; color:var(--orange-dark); text-transform:uppercase; }
+  main{ max-width:1080px; margin:0 auto; padding:64px 32px 96px; }
+  .eyebrow{ display:flex; justify-content:center; }
   .eyebrow span{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    background:#FFF1E4;
-    color:var(--orange-dark);
-    font-size:13px;
-    font-weight:600;
-    padding:8px 18px;
-    border-radius:999px;
+    display:inline-flex; align-items:center; gap:8px;
+    background:#FFF1E4; color:var(--orange-dark);
+    font-size:13px; font-weight:600; padding:8px 18px; border-radius:999px;
   }
-
-  h1{
-    text-align:center;
-    font-size:34px;
-    line-height:1.25;
-    margin:22px auto 10px;
-    max-width:720px;
-    color:var(--ink);
-  }
-  p.lead{
-    text-align:center;
-    color:var(--ink-soft);
-    font-size:16px;
-    margin:0 auto 56px;
-    max-width:560px;
-  }
-
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:24px;
-  }
+  h1{ text-align:center; font-size:34px; line-height:1.25; margin:22px auto 10px; max-width:720px; color:var(--ink); }
+  p.lead{ text-align:center; color:var(--ink-soft); font-size:16px; margin:0 auto 56px; max-width:560px; }
+  .grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
   @media (max-width:860px){
     .grid{ grid-template-columns:1fr; }
     header{ padding:16px 20px; }
     main{ padding:44px 20px 72px; }
     h1{ font-size:27px; }
   }
-
   .card{
-    background:#fff;
-    border:1px solid var(--card-border);
-    border-radius:16px;
-    box-shadow:var(--card-shadow);
-    padding:28px;
-    display:flex;
-    flex-direction:column;
-    text-decoration:none;
-    color:inherit;
+    background:#fff; border:1px solid var(--card-border); border-radius:16px;
+    box-shadow:var(--card-shadow); padding:28px;
+    display:flex; flex-direction:column; text-decoration:none; color:inherit;
     transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
   }
   .card:hover{
@@ -132,66 +69,23 @@
     box-shadow:0 4px 8px rgba(31,41,51,0.06), 0 16px 30px rgba(31,41,51,0.09);
     border-color:#E2D9C6;
   }
-
-  .icon{
-    width:52px;
-    height:52px;
-    border-radius:13px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:22px;
-  }
+  .icon{ width:52px; height:52px; border-radius:13px; display:flex; align-items:center; justify-content:center; margin-bottom:22px; }
   .icon svg{ width:24px; height:24px; }
-  .icon.teal{ background:#DFF6EE; }
-  .icon.amber{ background:#FFE8D2; }
-  .icon.blue{ background:#E1ECFB; }
-  .icon.purple{ background:#EDE4FB; }
-  .icon.rose{ background:#FBE4EC; }
-  .icon.indigo{ background:#E0E7FF; }
-  .icon.cyan{ background:#DDF3F8; }
-  .icon.red{ background:#FEE2E2; }
-
-  .card h2{
-    font-size:18px;
-    margin:0 0 10px;
-    color:var(--ink);
-  }
-  .card .num{
-    color:var(--orange-dark);
-    font-weight:700;
-  }
-  .card p{
-    font-size:14.5px;
-    line-height:1.55;
-    color:var(--ink-soft);
-    margin:0 0 26px;
-    flex-grow:1;
-  }
-
+  .icon.teal{ background:#DFF6EE; } .icon.amber{ background:#FFE8D2; } .icon.blue{ background:#E1ECFB; }
+  .icon.purple{ background:#EDE4FB; } .icon.rose{ background:#FBE4EC; } .icon.indigo{ background:#E0E7FF; }
+  .icon.cyan{ background:#DDF3F8; } .icon.red{ background:#FEE2E2; }
+  .card h2{ font-size:18px; margin:0 0 10px; color:var(--ink); }
+  .card .num{ color:var(--orange-dark); font-weight:700; }
+  .card p{ font-size:14.5px; line-height:1.55; color:var(--ink-soft); margin:0 0 26px; flex-grow:1; }
   .card .cta{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    font-size:14px;
-    font-weight:600;
-    color:var(--green);
-    border-top:1px solid var(--card-border);
-    padding-top:16px;
-    margin-top:auto;
+    display:flex; align-items:center; justify-content:space-between;
+    font-size:14px; font-weight:600; color:var(--green);
+    border-top:1px solid var(--card-border); padding-top:16px; margin-top:auto;
   }
-  .card .cta svg{
-    width:16px;
-    height:16px;
-    transition: transform .15s ease;
-  }
+  .card .cta svg{ width:16px; height:16px; transition: transform .15s ease; }
   .card:hover .cta svg{ transform:translateX(3px); }
-
   footer{
-    text-align:center;
-    padding:28px 20px 40px;
-    color:var(--ink-soft);
-    font-size:13px;
+    text-align:center; padding:28px 20px 40px; color:var(--ink-soft); font-size:13px;
     padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px));
   }
 </style>
@@ -223,6 +117,53 @@
 
   <div class="grid">
 
+    <a class="card" href="https://nuruddinzain2.github.io/anomalipusatsensusekonomi6371/" target="_blank" rel="noopener">
+      <div class="icon purple">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <h2><span class="num">1.</span> Perbaikan Anomali Pusat</h2>
+      <p>Dashboard monitoring dan tindak lanjut perbaikan anomali data hasil pendataan yang diminta oleh BPS pusat, lengkap dengan pembagian tugas dan pengiriman WA ke PPL.</p>
+      <div class="cta">
+        Buka Dashboard
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </a>
+
+    <a class="card" href="https://nuruddinzain2.github.io/anomaliprovinsi6371/" target="_blank" rel="noopener">
+      <div class="icon red">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+      </div>
+      <h2><span class="num">2.</span> Perbaikan Anomali Provinsi</h2>
+      <p>Dashboard monitoring dan tindak lanjut perbaikan anomali data hasil pendataan yang diminta oleh BPS Provinsi Kalimantan Selatan.</p>
+      <div class="cta">
+        Buka Dashboard
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </a>
+
+    <a class="card" href="https://nuruddinzain2.github.io/anomaliKBLI6371/" target="_blank" rel="noopener">
+      <div class="icon amber">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#DD6410" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+          <line x1="7" y1="7" x2="7.01" y2="7"/>
+        </svg>
+      </div>
+      <h2><span class="num">3.</span> Anomali KBLI</h2>
+      <p>Dashboard verifikasi dan perbaikan anomali kategori dan KBLI usaha hasil pendataan Sensus Ekonomi 2026 Kota Banjarmasin.</p>
+      <div class="cta">
+        Buka Dashboard
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </a>
+
     <a class="card" href="https://nuruddinzain2.github.io/cekpenyisiranwargaprelist6371/" target="_blank" rel="noopener">
       <div class="icon teal">
         <svg viewBox="0 0 24 24" fill="none" stroke="#0E9F6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -230,7 +171,7 @@
           <line x1="21" y1="21" x2="16.65" y2="16.65"/>
         </svg>
       </div>
-      <h2><span class="num">1.</span> Penyisiran Keluarga</h2>
+      <h2><span class="num">4.</span> Penyisiran Keluarga</h2>
       <p>Aplikasi penyisiran data keluarga untuk mendukung kelengkapan pendataan Sensus Ekonomi 2026.</p>
       <div class="cta">
         Buka Aplikasi
@@ -248,7 +189,7 @@
           <line x1="18" y1="8" x2="18" y2="8" stroke-width="3"/>
         </svg>
       </div>
-      <h2><span class="num">2.</span> Penyisiran Warga Tidak Ditemukan (DTSEN)</h2>
+      <h2><span class="num">5.</span> Penyisiran Warga Tidak Ditemukan (DTSEN)</h2>
       <p>Aplikasi penyisiran warga yang tidak ditemukan, bersumber dari data DTSEN, untuk mendukung kelengkapan pendataan Sensus Ekonomi 2026.</p>
       <div class="cta">
         Buka Aplikasi
@@ -263,7 +204,7 @@
           <circle cx="12" cy="10" r="3"/>
         </svg>
       </div>
-      <h2><span class="num">3.</span> Penyisiran Data Podes</h2>
+      <h2><span class="num">6.</span> Penyisiran Data Podes</h2>
       <p>Aplikasi penyisiran data potensi desa (Podes) untuk mendukung kelengkapan pendataan Sensus Ekonomi 2026.</p>
       <div class="cta">
         Buka Aplikasi
@@ -279,26 +220,10 @@
           <path d="M11 8v3l2 2"/>
         </svg>
       </div>
-      <h2><span class="num">4.</span> Pencarian Usaha yang Sudah Terdata di SE2026</h2>
+      <h2><span class="num">7.</span> Pencarian Usaha yang Sudah Terdata di SE2026</h2>
       <p>Aplikasi pencarian usaha yang ada dalam data Sensus Ekonomi 2026 untuk mempermudah verifikasi dan penyisiran.</p>
       <div class="cta">
         Buka Aplikasi
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </div>
-    </a>
-
-    <a class="card" href="https://nuruddinzain2.github.io/anomalipusatsensusekonomi6371/" target="_blank" rel="noopener">
-      <div class="icon purple">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-      </div>
-      <h2><span class="num">5.</span> Perbaikan Anomali Pusat</h2>
-      <p>Dashboard monitoring dan tindak lanjut perbaikan anomali data hasil pendataan yang diminta oleh BPS pusat, lengkap dengan pembagian tugas dan pengiriman WA ke PPL.</p>
-      <div class="cta">
-        Buka Dashboard
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </div>
     </a>
@@ -310,7 +235,7 @@
           <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
         </svg>
       </div>
-      <h2><span class="num">6.</span> Form Pelaporan Administrasi</h2>
+      <h2><span class="num">8.</span> Form Pelaporan Administrasi</h2>
       <p>Sistem pelaporan lapangan untuk pengawasan pelaksanaan Sensus Ekonomi 2026 secara berkala.</p>
       <div class="cta">
         Buka Sistem Pelaporan
@@ -327,7 +252,7 @@
           <line x1="23" y1="11" x2="17" y2="11"/>
         </svg>
       </div>
-      <h2><span class="num">7.</span> Pendaftaran Petugas SE2026</h2>
+      <h2><span class="num">9.</span> Pendaftaran Petugas SE2026</h2>
       <p>Formulir pendaftaran petugas Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Pendaftaran
@@ -344,7 +269,7 @@
           <rect x="14" y="14" width="7" height="7" rx="1"/>
         </svg>
       </div>
-      <h2><span class="num">8.</span> Alokasi Petugas</h2>
+      <h2><span class="num">10.</span> Alokasi Petugas</h2>
       <p>Aplikasi alokasi petugas untuk mendukung pelaksanaan Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Aplikasi
@@ -360,7 +285,7 @@
           <line x1="6" y1="20" x2="6" y2="14"/>
         </svg>
       </div>
-      <h2><span class="num">9.</span> Progress Pendataan Petugas</h2>
+      <h2><span class="num">11.</span> Progress Pendataan Petugas</h2>
       <p>Aplikasi pemantauan progress pendataan petugas untuk mendukung pelaksanaan Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Aplikasi
@@ -376,26 +301,10 @@
           <path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/>
         </svg>
       </div>
-      <h2><span class="num">10.</span> Tarik FASIH Cepat</h2>
+      <h2><span class="num">12.</span> Tarik FASIH Cepat</h2>
       <p>Aplikasi untuk menarik data hasil pendataan dari FASIH secara cepat untuk mendukung pemantauan Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Aplikasi
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </div>
-    </a>
-
-    <a class="card" href="https://nuruddinzain2.github.io/anomaliprovinsi6371/" target="_blank" rel="noopener">
-      <div class="icon red">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-          <line x1="12" y1="9" x2="12" y2="13"/>
-          <line x1="12" y1="17" x2="12.01" y2="17"/>
-        </svg>
-      </div>
-      <h2><span class="num">11.</span> Perbaikan Anomali Provinsi</h2>
-      <p>Dashboard monitoring dan tindak lanjut perbaikan anomali data hasil pendataan yang diminta oleh BPS Provinsi Kalimantan Selatan.</p>
-      <div class="cta">
-        Buka Dashboard
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </div>
     </a>
@@ -407,7 +316,7 @@
           <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
         </svg>
       </div>
-      <h2><span class="num">12.</span> Matching Usaha</h2>
+      <h2><span class="num">13.</span> Matching Usaha</h2>
       <p>Aplikasi pencocokan (matching) data usaha untuk mendukung kelengkapan dan validitas pendataan Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Aplikasi
@@ -424,7 +333,7 @@
           <line x1="9" y1="11" x2="15" y2="11"/>
         </svg>
       </div>
-      <h2><span class="num">13.</span> Penautan BKU</h2>
+      <h2><span class="num">14.</span> Penautan BKU</h2>
       <p>Aplikasi penautan Buku Kerja Usaha (BKU) untuk mendukung pelaksanaan Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Aplikasi
@@ -440,7 +349,7 @@
           <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
         </svg>
       </div>
-      <h2><span class="num">14.</span> Seluruh Data Sensus</h2>
+      <h2><span class="num">15.</span> Seluruh Data Sensus</h2>
       <p>Aplikasi untuk melihat seluruh data hasil Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Aplikasi
@@ -455,7 +364,7 @@
           <path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
         </svg>
       </div>
-      <h2><span class="num">15.</span> Pendataan SE2026</h2>
+      <h2><span class="num">16.</span> Pendataan SE2026</h2>
       <p>Tautan menuju halaman pendataan Sensus Ekonomi 2026 Kota Banjarmasin.</p>
       <div class="cta">
         Buka Pendataan
